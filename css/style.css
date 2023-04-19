@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width:1400px;
+    margin: 0 auto;
+}
+
+.header,.footer{
+    height: 70px;
+}
+
+.body{
+    height: calc(100vh - 140px);
+}
+
+.header .navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header .navigation .logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .navigation .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header .navigation .menu li.active{
+    background:#333333;
+}
+
+.header .navigation .menu li.active a{
+    color:#fff;
+}
+
+.header .navigation .menu ul li{
+    margin: 0 2.5px;
+    padding:10px 15px;
+    box-sizing: border-box;
+}
+
+.header .navigation .menu ul a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:#000;
+    text-decoration: none;
+}
+
+.body{
+    display: flex;
+}
+
+.body .imageHolder{
+    width: 40%;
+    background-image: url("../images/user.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 140px);
+}
+
+.body .descHolder{
+    width: 60%;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: rgba(157,193,251,.5);
+    box-sizing: border-box;
+}
+
+.body .descHolder .description h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    font-weight: 500;
+    position: relative;
+    color:#333333;
+    margin: 0 0 35px;
+}
+
+.body .descHolder .description h1::after{
+    content: "";
+    height: 5px;
+    width: 160px;
+    background-color:#333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.body .descHolder .description p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0 0 35px;
+    color:#333333;
+}
+
+.body .descHolder .description a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:#fff;
+    padding: 15px 30px;
+    background-color:#333333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .copyright{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.footer .social{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer .social a{
+    text-decoration: none;
+    margin: 0 10px;
+}
